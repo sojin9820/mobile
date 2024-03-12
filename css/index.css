@@ -2,7 +2,7 @@
 html,
 body {
   font-size: 16px;
-  font-family: "Noto Sans Kr", sans-serif;
+  font-family: "Noto Sans kr", sans-serif;
 }
 * {
   -webkit-text-size-adjust: none;
@@ -12,6 +12,7 @@ a {
 }
 body {
   overflow-x: hidden;
+  width: 100%;
 }
 /* header */
 header {
@@ -36,7 +37,7 @@ header .home-btn {
   text-indent: -9999px;
   width: 36px;
   height: 34px;
-  background: url(../img/icon/toplogo.png) no-repeat center/ 12px auto;
+  background: url(../img/icon/toplogo.png) no-repeat center / 12px auto;
   position: absolute;
   left: 20px;
   top: 18px;
@@ -50,7 +51,6 @@ header .menu-btn {
   right: 16px;
   top: 12px;
 }
-
 .mainslider-list li {
   position: relative;
 }
@@ -67,12 +67,11 @@ header .menu-btn {
   position: absolute;
   bottom: 17.222vw;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 /* 구독 */
 .subscribe-area {
   padding: 12.777vw 0;
@@ -91,6 +90,7 @@ header .menu-btn {
 .subscribe-area .subscribe-list li img {
   width: 73.888vw;
 }
+
 .subscribe-area .subscribe-btn {
   width: 64.722vw;
   height: 16.388vw;
@@ -129,22 +129,22 @@ header .menu-btn {
   color: #1da4d9;
   text-align: center;
   margin-top: 4.166vw;
-  font-size: 3.899vw;
+  font-size: 3.889vw;
   margin-bottom: 8.889vw;
 }
 .menu-area .menu-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 9px; */
+  /*  gap: 9px */
 }
 .menu-area .menu-list > li {
   width: calc(50% - 2.5vw);
 }
 .menu-area .menu-list > li:nth-child(2n + 1) {
-  margin-right: 4.5px;
+  margin-right: 1.25vw;
 }
 .menu-area .menu-list > li:nth-child(2n) {
-  margin-left: 4.5px;
+  margin-left: 1.25vw;
 }
 .menu-area .menu-list > li img {
   width: 100%;
@@ -155,7 +155,7 @@ header .menu-btn {
 .menu-area .menu-list > li .menu-thum-txt {
   text-align: center;
   color: #a1a1a1;
-  padding: 3.899vw 0;
+  padding: 3.889vw 0;
 }
 .menu-area .menu-list > li .menu-thum-txt strong {
   color: #fff;
@@ -178,11 +178,10 @@ header .menu-btn {
   font-size: 3.6vw;
   text-align: center;
 }
-
-/* 베스트 메뉴 */
+/* 베스트메뉴 */
 .best-menu-area {
-  background-color: #ebebeb;
-  margin: 9.444vw 4.166vw 7.777vw;
+  background: #ebebeb;
+  padding: 9.444vw 4.166vw 7.777vw;
 }
 .best-menu-area img {
   width: 100%;
@@ -200,7 +199,7 @@ header .menu-btn {
   display: block;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 0px;
   height: 1.666vw;
   width: 10vw;
   background-color: #36373b;
@@ -208,6 +207,6 @@ header .menu-btn {
 .best-menu-area .best_title_sub {
   font-size: 4.166vw;
   color: #5e6068;
-  margin-top: 3.88vw;
+  margin-top: 3.888vw;
   margin-left: 6.666vw;
 }
