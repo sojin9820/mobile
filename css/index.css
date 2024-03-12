@@ -101,3 +101,68 @@ header .menu-btn {
   line-height: 16.388vw;
   margin: 8.055vw auto 0;
 }
+
+/* 메뉴 */
+.menu-area {
+  background: url(../img/menu-bg.png) no-repeat center / cover;
+  padding: 16.111vw 4.444vw 14.722vw;
+}
+.menu-area .menu-title {
+  color: #fff;
+  text-align: center;
+  font-size: 9.444vw;
+  position: relative;
+  padding-top: 3.055vw;
+}
+.menu-area .menu-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1da4d9;
+  width: 10.833vw;
+  height: 1.389vw;
+}
+.menu-area .menu-title-sub {
+  color: #1da4d9;
+  text-align: center;
+  margin-top: 4.166vw;
+  font-size: 3.899vw;
+  margin-bottom: 8.889vw;
+}
+.menu-area .menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 9px; */
+}
+.menu-area .menu-list > li {
+  width: calc(50% - 2.5vw);
+}
+.menu-area .menu-list > li:nth-child(2n + 1) {
+  margin-right: 4.5px;
+}
+.menu-area .menu-list > li:nth-child(2n) {
+  margin-left: 4.5px;
+}
+.menu-area .menu-list > li img {
+  width: 100%;
+}
+.menu-area .menu-list > li > a > span {
+  display: block;
+}
+.menu-area .menu-list > li .menu-thum-txt {
+  text-align: center;
+  color: #a1a1a1;
+  padding: 3.899vw 0;
+}
+.menu-area .menu-list > li .menu-thum-txt strong {
+  color: #fff;
+  display: block;
+  font-size: 3.611vw;
+  margin-bottom: 2.5vw;
+}
+.menu-area .menu-list > li .menu-thum-txt .price {
+  font-size: 3.055vw;
+}
